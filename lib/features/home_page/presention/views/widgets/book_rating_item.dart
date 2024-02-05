@@ -10,7 +10,7 @@ class BookRatingItem extends StatelessWidget {
     return const Row(
       children: [
         Icon(
-          FontAwesomeIcons.solidStarHalfStroke,
+          FontAwesomeIcons.solidStar,
           color: Color(0xffFFDD4F),
         ),
         SizedBox(
