@@ -1,15 +1,20 @@
+import 'package:bookly_gemy/features/home_page/presention/views/widgets/custom_book_Image.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 class BookDetailesViewBody extends StatelessWidget {
   const BookDetailesViewBody({super.key});
-
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.symmetric(horizontal:30.0),
+    var width = MediaQuery.of(context).size.width;
+
+    return  Padding(
+      padding: const EdgeInsets.symmetric(horizontal:30.0),
       child: Column(
-        children: [CustomBookDetailesAppBar()],
+        children: [const CustomBookDetailesAppBar(),Padding(
+          padding: EdgeInsets.symmetric(horizontal: width * .17),
+          child: const CustomBookImage(),
+        )],
       ),
     );
   }
