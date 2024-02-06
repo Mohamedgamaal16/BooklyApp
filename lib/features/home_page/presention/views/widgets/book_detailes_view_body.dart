@@ -1,6 +1,7 @@
 import 'package:bookly_gemy/core/widgets/custom_button.dart';
 import 'package:bookly_gemy/features/home_page/presention/views/widgets/book_rating_item.dart';
 import 'package:bookly_gemy/features/home_page/presention/views/widgets/books_action_buttons.dart';
+import 'package:bookly_gemy/features/home_page/presention/views/widgets/books_detailes_list_view.dart';
 import 'package:bookly_gemy/features/home_page/presention/views/widgets/custom_book_Image.dart';
 import 'package:bookly_gemy/features/home_page/presention/views/widgets/custom_book_detailes_app_bar.dart.dart';
 import 'package:bookly_gemy/styles.dart';
@@ -43,12 +44,25 @@ class BookDetailesViewBody extends StatelessWidget {
           ),
           const BookRatingItem(
             mainAxisAlignment: MainAxisAlignment.center,
-          ),const SizedBox(
+          ),
+          const SizedBox(
             height: 10,
           ),
           const BooksActionsButton(),
+          const SizedBox(
+            height: 20,
+          ),
+          Align(
+              alignment: Alignment.centerLeft,
+              child: Text(
+                'you may also like',
+                style: Styles.textStyle14.copyWith(fontWeight: FontWeight.w700),
+              )),
+       const SizedBox(height: 8,), const BooksDetailesListView(),
         ],
       ),
     );
   }
 }
+
+
