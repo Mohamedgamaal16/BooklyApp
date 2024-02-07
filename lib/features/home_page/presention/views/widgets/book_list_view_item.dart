@@ -5,15 +5,17 @@ import 'package:bookly_gemy/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-class BestSellerListViewItem extends StatelessWidget {
-  const BestSellerListViewItem({super.key});
+class BookListViewItem extends StatelessWidget {
+  const BookListViewItem({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(onTap: (){
-      GoRouter.of(context).push(AppRouter.kBookDetailesView);
-    },
-      child: SizedBox(height: 125,
+    return GestureDetector(
+      onTap: () {
+        GoRouter.of(context).push(AppRouter.kBookDetailesView);
+      },
+      child: SizedBox(
+        height: 125,
         child: Row(
           children: [
             AspectRatio(
@@ -56,9 +58,10 @@ class BestSellerListViewItem extends StatelessWidget {
                     children: [
                       Text(
                         '19.99 # ',
-                        style:
-                            Styles.textStyle20.copyWith(fontWeight: FontWeight.bold),
-                      ),const Spacer(),
+                        style: Styles.textStyle20
+                            .copyWith(fontWeight: FontWeight.bold),
+                      ),
+                      const Spacer(),
                       const BookRatingItem()
                     ],
                   )
@@ -71,4 +74,3 @@ class BestSellerListViewItem extends StatelessWidget {
     );
   }
 }
-

@@ -10,8 +10,6 @@ void main() {
   runApp(const Bookly());
 }
 
-
-
 class Bookly extends StatelessWidget {
   const Bookly({super.key});
 
@@ -27,4 +25,3 @@ class Bookly extends StatelessWidget {
     );
   }
 }
-
