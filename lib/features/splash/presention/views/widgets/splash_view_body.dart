@@ -1,6 +1,5 @@
 import 'package:bookly_gemy/core/utils/app_router.dart';
 import 'package:bookly_gemy/core/utils/assets.dart';
-import 'package:bookly_gemy/features/home_page/presention/views/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
