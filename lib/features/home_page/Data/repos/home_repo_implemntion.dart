@@ -20,7 +20,7 @@ class HomeRepoimplemntion implements HomeRepo {
         books.add(BookModel.fromJson(item));
       }
       return right(books);
-    } on Exception catch (e) {
+    }  catch (e) {
       if (e is DioException) {
         return left(ServerFaliure.fromDioError(e));
       }
@@ -38,7 +38,7 @@ class HomeRepoimplemntion implements HomeRepo {
         books.add(BookModel.fromJson(item));
       }
       return right(books);
-    } on Exception catch (e) {
+    } catch (e) {
       if (e is DioException) {
         return left(ServerFaliure.fromDioError(e));
       }
